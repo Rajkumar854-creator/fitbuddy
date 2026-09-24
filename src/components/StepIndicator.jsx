@@ -1,0 +1,1 @@
+export default function StepIndicator({step,total}){ return <div className="step-indicator"><div className="step-track"><span style={{width:`${((step+1)/total)*100}%`}}/></div><div className="step-copy"><strong>Step {String(step+1).padStart(2,'0')}</strong><span>of {String(total).padStart(2,'0')}</span></div></div> }

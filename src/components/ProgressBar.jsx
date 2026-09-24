@@ -1,0 +1,1 @@
+export default function ProgressBar({value=0,label=true}){ return <div className="progress-wrap">{label&&<div className="progress-label"><span>Weekly progress</span><strong>{value}%</strong></div>}<div className="progress-track"><span style={{width:`${value}%`}}/></div></div> }

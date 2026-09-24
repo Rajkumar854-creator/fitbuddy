@@ -1,0 +1,2 @@
+export const requiredSteps = [0,1,2,3,4,5,6];
+export function validatePreferences(preferences) { const missing = []; if (!preferences.name?.trim()) missing.push('name'); if (!preferences.goal) missing.push('goal'); if (!preferences.experience) missing.push('experience'); if (!preferences.days) missing.push('days'); if (!preferences.duration) missing.push('duration'); if (!preferences.location) missing.push('location'); if (!preferences.equipment) missing.push('equipment'); if (!preferences.focusAreas?.length) missing.push('focusAreas'); return missing; }

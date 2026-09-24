@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function Footer(){ return <footer className="footer"><div><Link className="brand" to="/"><span className="brand-mark">✦</span><span>Fit<span>Buddy</span></span></Link><p>Make room for the life you want to feel.</p></div><div className="footer-links"><Link to="/">Home</Link><Link to="/dashboard">Dashboard</Link><Link to="/create-plan">Create Plan</Link><Link to="/sample-plans">Sample Plans</Link></div><small>© 2026 FitBuddy. Built for your next good day.</small></footer> }
