@@ -87,13 +87,14 @@ function Login() {
         <p>Log in to open your private plan and weekly workout checklist.</p>
         <form onSubmit={submit} className="login-form">
           <label htmlFor="username">Username</label>
-          <input id="username" value={username} onChange={(event) => setUsername(event.target.value)} placeholder="Enter Username" autoComplete="username" autoFocus />
+          <input id="username" value={username} onChange={(event) => setUsername(event.target.value)} placeholder="user1 / user2" autoComplete="username" autoFocus />
           <label htmlFor="password">Password</label>
-          <input id="password" type="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Enter Password" autoComplete="current-password" />
+          <input id="password" type="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="123456789" autoComplete="current-password" />
           {error && <p className="form-error">{error}</p>}
           <button className="button login-submit" type="submit">Log in <ArrowRight size={16} /></button>
         </form>
-        <small className="login-hint">Two demo accounts are available: user1 and user2.</small>
+        <small className="login-hint">Two demo accounts are available: user1 and user2.
+        </small>
       </section>
     </main>
   );
